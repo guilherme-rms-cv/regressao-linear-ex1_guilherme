@@ -3,11 +3,10 @@ from pathlib import Path
 # Código Python corrigido com boas práticas
 import os
 import subprocess
-import sys
 from pathlib import Path
 
 
-def create_venv(env_name="regressao-linear-ex1"):
+def create_venv(env_name="venv"):
     """
     Cria um ambiente virtual com o nome especificado.
     """
@@ -19,9 +18,9 @@ def create_venv(env_name="regressao-linear-ex1"):
     print(f"✅ Ambiente virtual '{env_name}' criado com sucesso.")
 
 
-def install_requirements(env_name="regressao-linear-ex1", req_file="REQUIREMENTS.txt"):
+def install_requirements(env_name="venv", req_file="requirements.txt"):
     """
-    Instala os pacotes do arquivo REQUIREMENTS.txt dentro do ambiente virtual.
+    Instala os pacotes do arquivo requirements.txt dentro do ambiente virtual.
     """
     if os.name == "nt":
         pip_path = os.path.join(env_name, "Scripts", "pip.exe")
@@ -39,7 +38,7 @@ def install_requirements(env_name="regressao-linear-ex1", req_file="REQUIREMENTS
 
 if __name__ == "__main__":
     create_venv()
-    if Path("REQUIREMENTS.txt").exists():
+    if Path("requirements.txt").exists():
         install_requirements()
     else:
-        print("⚠️ Arquivo 'REQUIREMENTS.txt' não encontrado. Crie um e liste suas dependências.")
+        print("⚠️ Arquivo 'requirements.txt' não encontrado. Crie um e liste suas dependências.")
