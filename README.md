@@ -177,8 +177,8 @@ Dúvidas, estou à disposição por e-mail ou em sala.
 ## Reconhecimentos e Direitos Autorais
 
 ```
-@autor:                [Seu Nome]  
-@contato:              [Seu Email]  
+@autor:                Guilherme Roberto Matos Silva  
+@contato:              guilherme.rms.cv@gmail.com 
 @data última versão:   20/04/2025  
 @versão:               1.0  
 @outros repositórios:  [URLs opcionais]  

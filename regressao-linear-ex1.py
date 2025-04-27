@@ -89,7 +89,7 @@ def main():
     # Exercício 4: Produto matricial X @ theta
     print('\nExercício 4: Produto X @ theta')
     X_ex4 = warm_up_exercise3(x_ex3)
-    theta_ex4 = np.array([1, 2])
+    theta_ex4 = np.array([0, 0])
     print(warm_up_exercise4(X_ex4, theta_ex4))  # Esperado: [5, 9, 13]
 
     # Exercício 5: Erros quadráticos
